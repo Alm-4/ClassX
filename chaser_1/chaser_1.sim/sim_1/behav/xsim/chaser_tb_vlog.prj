@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../chaser_1.srcs/sources_1/new/chaser.v" \
+"../../../../chaser_1.srcs/sources_1/new/clock_scaler.v" \
+"../../../../chaser_1.srcs/sources_1/new/scale_adjuster.v" \
+"../../../../chaser_1.srcs/sim_1/new/chaser_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
